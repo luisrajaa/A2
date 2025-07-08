@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Undangan pernikahan Agustinus & Angela. 16 Juli 2025"
+    />
+    <meta
+      property="og:title"
+      content="Undangan Pernikahan Agustinus & Angela"
+    />
+    <meta
+      property="og:description"
+      content="16 Juli 2025 | Gereja Katedral Roh Kudus Denpasar"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/LuisRaja/Balikosan/main/IMG_1204.jpg"
+    />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Agustinus & Angela Wedding</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        overflow-x: hidden;
+        color: #333;
+        scroll-behavior: smooth;
+        line-height: 1.6;
+        background-color: #f9f5f0;
+      }
+
+      /* Modern Parallax Effect */
+      .parallax-section {
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        position: relative;
+        color: white;
+        overflow: hidden;
+      }
+
+      .parallax-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .section-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+
+      .visible .section-content {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Background Sections */
+      #hero {
+        background-image: url("https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108678.jpg");
+        background-position: center 30%;
+      }
+
+      #events {
+        background-image: url("https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108681.jpg");
+      }
+
+      #closing {
+        background-image: url("https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108673.jpg");
+      }
+
+      /* Bible Verse Section */
+      .verse-section {
+        background-color: white;
+        padding: 60px 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .verse-container {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .verse-text {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.2rem, 4vw, 1.6rem);
+        line-height: 1.8;
+        color: #8b5a2b;
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      .verse-ref {
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        color: #666;
+        font-weight: 300;
+      }
+
+      .couple-names {
+        font-family: "Dancing Script", cursive;
+        font-size: clamp(2.8rem, 10vw, 5.5rem);
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        line-height: 1.1;
+        letter-spacing: 1px;
+      }
+
+      .couple-fullnames {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        opacity: 0.9;
+      }
+
+      .invitation-text {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        letter-spacing: 3px;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+      }
+
+      .invitation-text::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: white;
+        margin: 15px auto;
+      }
+
+      /* Modern Countdown Timer */
+      .countdown-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 0 auto;
+      }
+
+      .countdown-item {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        padding: 15px 5px;
+        border-radius: 8px;
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .countdown-number {
+        font-size: clamp(1.5rem, 7vw, 2.5rem);
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 5px;
+      }
+
+      .countdown-label {
+        font-size: clamp(0.6rem, 2.5vw, 0.9rem);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.9;
+      }
+
+      /* Event Cards */
+      .event-card {
+        background-color: rgba(255, 255, 255, 0.93);
+        color: #333;
+        padding: 30px;
+        border-radius: 12px;
+        margin: 0 auto 30px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .event-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(to bottom, #d4a373, #8b5a2b);
+      }
+
+      .event-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        margin-bottom: 1.5rem;
+        color: #8b5a2b;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .event-details {
+        margin-bottom: 1rem;
+        font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+      }
+
+      .event-icon {
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+        color: #8b5a2b;
+      }
+
+      /* Button Styles */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: linear-gradient(to right, #8b5a2b, #d4a373);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        margin-top: 1rem;
+        transition: all 0.3s ease;
+        font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        max-width: 250px;
+        box-shadow: 0 4px 15px rgba(139, 90, 43, 0.3);
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(139, 90, 43, 0.4);
+      }
+
+      .btn-sm {
+        padding: 8px 20px;
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        max-width: 180px;
+      }
+
+      .btn-icon {
+        width: 18px;
+        height: 18px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: clamp(0.9rem, 3vw, 1rem);
+      }
+
+      .footer-text {
+        margin-bottom: 1rem;
+        line-height: 1.7;
+      }
+
+      footer a {
+        color: #d4a373;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      footer a:hover {
+        color: #f8d7a4;
+        text-decoration: underline;
+      }
+
+      /* RSVP Form */
+      .rsvp-form {
+        background-color: rgba(255, 255, 255, 0.93);
+        color: #333;
+        padding: 30px;
+        border-radius: 12px;
+        margin: 30px auto;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        display: none;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: #8b5a2b;
+      }
+
+      select.form-control {
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 15px;
+      }
+
+      /* Amplop Online */
+      .amplop-section {
+        margin: 30px auto;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .amplop-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+        margin-bottom: 1.5rem;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .amplop-card {
+        background-color: rgba(255, 255, 255, 0.93);
+        color: #333;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .amplop-text {
+        margin-bottom: 20px;
+        font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+      }
+
+      .amplop-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(to right, #8b5a2b, #d4a373);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+        box-shadow: 0 4px 15px rgba(139, 90, 43, 0.3);
+      }
+
+      .amplop-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(139, 90, 43, 0.4);
+      }
+
+      .amplop-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Gallery Section */
+      .gallery-section {
+        background-color: white;
+        padding: 60px 20px;
+      }
+
+      .gallery-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        text-align: center;
+        margin-bottom: 40px;
+        color: #8b5a2b;
+      }
+
+      .gallery-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        height: 400px;
+        will-change: transform;
+      }
+
+      .gallery-slide {
+        min-width: calc(100% / 3);
+        position: relative;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        flex-shrink: 0;
+      }
+
+      .gallery-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Mobile view - single centered image */
+      @media (max-width: 768px) {
+        .gallery-slide {
+          min-width: 100%;
+          padding: 10px 30px;
+        }
+        .gallery-slide.left img,
+        .gallery-slide.right img {
+          filter: blur(3px) brightness(0.7);
+          transform: scale(0.85);
+          opacity: 0.7;
+        }
+        .gallery-slide.center img {
+          transform: scale(1);
+          z-index: 2;
+        }
+      }
+
+      /* Desktop view - 3 visible images */
+      @media (min-width: 769px) {
+        .gallery-slide.left img {
+          transform: scale(0.85) translateX(15%);
+          filter: blur(2px) brightness(0.8);
+          opacity: 0.8;
+        }
+        .gallery-slide.right img {
+          transform: scale(0.85) translateX(-15%);
+          filter: blur(2px) brightness(0.8);
+          opacity: 0.8;
+        }
+        .gallery-slide.center img {
+          transform: scale(1.05);
+          z-index: 2;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .gallery-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 15px;
+      }
+
+      .gallery-nav button {
+        background: rgba(139, 90, 43, 0.2);
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #8b5a2b;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .gallery-nav button:hover {
+        background: rgba(139, 90, 43, 0.3);
+        transform: scale(1.1);
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .modal.show {
+        display: flex;
+        opacity: 1;
+      }
+
+      .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+        animation: zoomIn 0.3s;
+      }
+
+      .modal-content img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .modal-close {
+        position: absolute;
+        top: -40px;
+        right: -10px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 15px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(139, 90, 43, 0.3);
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .dot.active {
+        background: #8b5a2b;
+        transform: scale(1.2);
+      }
+
+      /* Family Section */
+      .family-section {
+        background-color: white;
+        padding: 60px 20px;
+      }
+
+      .family-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        text-align: center;
+        margin-bottom: 40px;
+        color: #8b5a2b;
+      }
+
+      .family-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .family-column {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .family-subtitle {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+        color: #8b5a2b;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .family-subtitle::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: #d4a373;
+        margin: 10px auto;
+      }
+
+      .family-list {
+        list-style-type: none;
+        text-align: center;
+      }
+
+      .family-list li {
+        margin-bottom: 12px;
+        font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+      }
+
+      /* Credit Section */
+      .credit-section {
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f5f0;
+      }
+
+      .credit-text {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .credit-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: #8b5a2b;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .credit-link:hover {
+        color: #d4a373;
+        text-decoration: underline;
+      }
+
+      .credit-icon {
+        width: 18px;
+        height: 18px;
+      }
+
+      /* Gaya Icon Musik */
+      .music-control {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: all 0.3s;
+        border: 1px solid #e0c9a6;
+      }
+
+      .music-control:hover {
+        transform: scale(1.1);
+        background: #f8f1e5;
+      }
+
+      .music-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #8b5a2b;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .pause-indicator {
+        display: none;
+        stroke: none;
+        fill: #8b5a2b;
+      }
+
+      .music-control.paused .pause-indicator {
+        display: block;
+      }
+
+      /* Loading Indicator */
+      .loading {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #8b5a2b;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 900px) {
+        .gallery-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .parallax-section {
+          background-attachment: scroll;
+          padding: 60px 20px;
+        }
+
+        .countdown {
+          gap: 8px;
+        }
+
+        .countdown-item {
+          padding: 12px 5px;
+        }
+
+        .event-card,
+        .rsvp-form {
+          padding: 25px 20px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .gallery-container {
+          grid-template-columns: 1fr;
+          max-width: 400px;
+        }
+
+        .family-column {
+          min-width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .couple-names {
+          font-size: 2.8rem;
+        }
+
+        .invitation-text {
+          font-size: 1.1rem;
+        }
+
+        .countdown {
+          gap: 5px;
+        }
+
+        .countdown-item {
+          padding: 10px 3px;
+        }
+
+        .event-details {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+      <source
+        src="https://raw.githubusercontent.com/LuisRaja/Balikosan/main/Christina%20Perri%20-%20A%20Thousand%20Years%20%5BOfficial%20Music%20Video%5D.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Floating Music Control -->
+    <div class="music-control" id="musicControl">
+      <svg class="music-icon" viewBox="0 0 24 24">
+        <!-- Icon Note (default state) -->
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+        <!-- Pause indicator (hidden by default) -->
+        <rect
+          x="4"
+          y="4"
+          width="6"
+          height="16"
+          rx="1"
+          class="pause-indicator"
+        ></rect>
+      </svg>
+    </div>
+
+    <!-- Hero Section with Countdown -->
+    <section class="parallax-section" id="hero">
+      <div class="section-content">
+        <h1 class="couple-names">Agustinus & Angela</h1>
+        <p class="couple-fullnames">AGUSTINUS SEKO & ANGELA MERICI SA'O</p>
+        <p class="invitation-text">Dengan rendah hati mengundang</p>
+
+        <div class="countdown-container">
+          <div class="countdown">
+            <div class="countdown-item">
+              <div class="countdown-number" id="days">00</div>
+              <div class="countdown-label">Hari</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Jam</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Menit</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Detik</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#events" class="btn">Lihat Detail Acara</a>
+      </div>
+    </section>
+
+    <!-- Bible Verse Section -->
+    <section class="verse-section">
+      <div class="verse-container">
+        <p class="verse-text">
+          "Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa
+          yang telah dipersatukan Allah, tidak boleh diceraikan manusia."
+        </p>
+        <p class="verse-ref">Matius 19:6</p>
+      </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section
+      class="parallax-section"
+      id="events"
+      style="min-height: auto; padding: 60px 20px"
+    >
+      <div class="section-content">
+        <div class="event-card">
+          <h2 class="event-title">Pemberkatan Pernikahan</h2>
+          <p class="event-details">
+            <svg
+              class="event-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <strong>RABU, 16 JULI 2025</strong>
+          </p>
+          <p class="event-details">
+            <svg
+              class="event-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <strong>09.00 WITA</strong>
+          </p>
+          <p class="event-details">
+            <svg
+              class="event-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <strong>Gereja Katedral Roh Kudus Denpasar</strong>
+          </p>
+          <a
+            href="https://maps.app.goo.gl/ekbNXPq3S83QUzqH7"
+            class="btn"
+            target="_blank"
+          >
+            <svg
+              class="btn-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Lihat Lokasi
+          </a>
+        </div>
+
+        <div class="event-card">
+          <h2 class="event-title">Resepsi Pernikahan</h2>
+          <p class="event-details">
+            <svg
+              class="event-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <strong>RABU, 16 JULI 2025</strong>
+          </p>
+          <p class="event-details">
+            <svg
+              class="event-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <strong>18:00 - 00:00 WITA</strong>
+          </p>
+          <p class="event-details">
+            <svg
+              class="event-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <strong>Warung Bebek D'uma</strong>
+          </p>
+          <p class="event-details" style="padding-left: 32px">
+            Jl. Tukad Balian No.99, Renon
+          </p>
+          <a
+            href="https://maps.app.goo.gl/8nL8FaWDQDfJiCdu7"
+            class="btn"
+            target="_blank"
+          >
+            <svg
+              class="btn-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Lihat Lokasi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <h2 class="gallery-title">A Glimpse of Us</h2>
+      <div class="gallery-container">
+        <div class="gallery-track" id="track">
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108668.jpg"
+              alt="Agustinus & Angela prewedding photo 1"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108669.jpg"
+              alt="Agustinus & Angela prewedding photo 2"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108670.jpg"
+              alt="Agustinus & Angela prewedding photo 3"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108671.jpg"
+              alt="Agustinus & Angela prewedding photo 4"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108672.jpg"
+              alt="Agustinus & Angela prewedding photo 5"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108674.jpg"
+              alt="Agustinus & Angela prewedding photo 6"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108675.jpg"
+              alt="Agustinus & Angela prewedding photo 7"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108680.jpg"
+              alt="Agustinus & Angela prewedding photo 8"
+            />
+          </div>
+          <div class="gallery-slide">
+            <img
+              loading="lazy"
+              src="https://raw.githubusercontent.com/luisrajaa/A2/main/agusangel/1000108679.jpg"
+              alt="Agustinus & Angela prewedding photo 9"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-nav">
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+      </div>
+
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- Family Section -->
+    <section class="family-section">
+      <h2 class="family-title">TURUT MENGUNDANG</h2>
+      <div class="family-container">
+        <div class="family-column">
+          <h3 class="family-subtitle">Keluarga Mempelai Pria</h3>
+          <ul class="family-list">
+            <li>Alm. Bpk. Bernardus Balu</li>
+            <li>Alm. Ibu. Veronika Sabu</li>
+            <li>Bpk. Albertus More</li>
+            <li>Kelurga besar Pe'ibenga</li>
+            <li>Keluarga besar Ndu'a Ria</li>
+          </ul>
+        </div>
+        <div class="family-column">
+          <h3 class="family-subtitle">Keluarga Mempelai Wanita</h3>
+          <ul class="family-list">
+            <li>Alm. Bpk. Paulus Paze</li>
+            <li>Bpk. Fransiskus Ndate</li>
+            <li>Bpk. Fabianus Sape</li>
+            <li>Alm. Bpk. Aloysius Wero</li>
+            <li>Bpk. Sebastianus Na'u</li>
+            <li>Bpk. Evensius Sigha</li>
+            <li>Frederikus Ndate</li>
+            <li>Keluarga besar Kolibari Samba</li>
+            <li>Keluarga Besar Manunggoo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section
+      class="parallax-section"
+      id="rsvp"
+      style="min-height: auto; padding: 60px 20px"
+    >
+      <div class="section-content">
+        <button id="showRsvpBtn" class="btn btn-sm">
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+            ></path>
+          </svg>
+          RSVP Sekarang
+        </button>
+
+        <div class="rsvp-form" id="rsvpForm">
+          <h2 class="event-title">Konfirmasi Kehadiran</h2>
+          <form id="attendanceForm">
+            <div class="form-group">
+              <label for="name">Nama Anda</label>
+              <input type="text" id="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="jumlah">Jumlah Orang</label>
+              <input
+                type="number"
+                id="jumlah"
+                class="form-control"
+                min="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="waktu">Perkiraan Waktu Kedatangan</label>
+              <select id="waktu" class="form-control" required>
+                <option value="">Pilih Waktu</option>
+                <option value="18:00">18:00 WITA</option>
+                <option value="19:00">19:00 WITA</option>
+                <option value="20:00">20:00 WITA</option>
+                <option value="21:00">21:00 WITA</option>
+                <option value="22:00">22:00 WITA</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pesan">Pesan/Ucapan (Opsional)</label>
+              <textarea id="pesan" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-sm" id="submitBtn">
+              <svg
+                class="btn-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 2l-7 20-4-9-9-4z"></path>
+              </svg>
+              Kirim Konfirmasi
+            </button>
+          </form>
+        </div>
+
+        <div class="amplop-section">
+          <h3 class="amplop-title">AMPLOP ONLINE</h3>
+          <div class="amplop-card">
+            <p class="amplop-text">
+              Jika Anda ingin memberikan kado secara online, kami dengan senang
+              hati menerimanya melalui:
+            </p>
+            <a
+              href="https://trakteer.id/agus&angel/tip"
+              class="amplop-link"
+              target="_blank"
+            >
+              <svg
+                class="amplop-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <path d="M22 6l-10 7L2 6"></path>
+              </svg>
+              Trakteer.id
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="parallax-section" id="closing">
+      <div class="section-content">
+        <h2
+          style="
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 6vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          "
+        >
+          Kedatanganmu Menyempurnakan Kebahagiaan Kami
+        </h2>
+        <a href="#rsvp" class="btn btn-sm">
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+            ></path>
+          </svg>
+          RSVP Sekarang
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        Terima kasih Atas dukungan yang tak ternilai, kami mengundang
+        Bapak/Ibu/Saudara/i untuk turut memberkati perjalanan baru kami.
+      </p>
+      <div class="credit-section">
+        <p class="credit-text">Website</p>
+        <a
+          href="https://www.instagram.com/luisraja_?igsh=eXVoYnJ2am1uNXpz"
+          class="credit-link"
+          target="_blank"
+        >
+          <svg
+            class="credit-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          luisraja_
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal for gallery -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modal-img" src="" alt="Foto diperbesar" />
+      </div>
+    </div>
+
+    <script>
+      // Countdown Timer
+      function updateCountdown() {
+        const weddingDate = new Date("July 16, 2025 09:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        // If wedding has passed
+        if (distance < 0) {
+          document.getElementById("days").innerText = "00";
+          document.getElementById("hours").innerText = "00";
+          document.getElementById("minutes").innerText = "00";
+          document.getElementById("seconds").innerText = "00";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").innerText = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").innerText = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").innerText = seconds
+          .toString()
+          .padStart(2, "0");
+      }
+
+      updateCountdown();
+      const countdownTimer = setInterval(updateCountdown, 1000);
+
+      // Scroll Animation
+      const observerOptions = {
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".parallax-section").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Audio Configuration
+      const bgMusic = document.getElementById("bgMusic");
+      const musicControl = document.getElementById("musicControl");
+
+      // Set volume to 50%
+      bgMusic.volume = 0.5;
+
+      // Auto-play strategy with user interaction
+      function initAudio() {
+        // Try to play automatically (muted to bypass restrictions)
+        bgMusic.muted = true;
+        const playPromise = bgMusic.play();
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Unmute after first interaction
+              const unmute = () => {
+                bgMusic.muted = false;
+                musicControl.style.display = "flex";
+                document.removeEventListener("click", unmute);
+                document.removeEventListener("touchstart", unmute);
+              };
+              document.addEventListener("click", unmute);
+              document.addEventListener("touchstart", unmute);
+            })
+            .catch((error) => {
+              console.log("Autoplay prevented:", error);
+              musicControl.style.display = "flex";
+            });
+        }
+      }
+
+      // Manual control
+      musicControl.addEventListener("click", () => {
+        if (bgMusic.paused) {
+          bgMusic
+            .play()
+            .then(() => {
+              musicControl.classList.remove("paused");
+            })
+            .catch((e) => {
+              console.error("Playback failed:", e);
+            });
+        } else {
+          bgMusic.pause();
+          musicControl.classList.add("paused");
+        }
+      });
+
+      // Update icon state
+      bgMusic.addEventListener("play", () => {
+        musicControl.classList.remove("paused");
+      });
+
+      bgMusic.addEventListener("pause", () => {
+        musicControl.classList.add("paused");
+      });
+
+      // Error handling
+      bgMusic.addEventListener("error", (e) => {
+        console.error("Audio error:", e);
+        musicControl.style.display = "flex";
+      });
+
+      // Initialize audio when page loads
+      window.addEventListener("load", () => {
+        initAudio();
+        musicControl.style.display = "flex"; // Always show the music control
+      });
+
+      // RSVP Form Toggle
+      document
+        .getElementById("showRsvpBtn")
+        .addEventListener("click", function () {
+          const form = document.getElementById("rsvpForm");
+          form.style.display = "block";
+          this.style.display = "none";
+          form.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+
+      // RSVP Form Submission
+      document
+        .getElementById("attendanceForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const loading = document.getElementById("loading");
+          const submitBtn = document.getElementById("submitBtn");
+          const name = document.getElementById("name").value;
+          const jumlah = document.getElementById("jumlah").value;
+          const waktu = document.getElementById("waktu").value;
+          const pesan = document.getElementById("pesan").value || "-";
+
+          // Show loading
+          loading.style.display = "flex";
+          submitBtn.disabled = true;
+
+          // Prepare data
+          const formData = new FormData();
+          formData.append("name", name);
+          formData.append("jumlah", jumlah);
+          formData.append("waktu", waktu);
+          formData.append("pesan", pesan);
+
+          // Send to Google Sheets
+          const sheetsPromise = fetch(
+            "https://script.google.com/macros/s/AKfycbxLFxcSHB8-q2-8PHU2ZtAzfmlfXhtl18h4xcyLPBsFNnd2Z3CzD11dZ2oTwvBosxx2DQ/exec",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
+
+          // Send to WhatsApp
+          const whatsappMsg = `Konfirmasi Kehadiran Pernikahan%0ANama: ${name}%0AJumlah: ${jumlah} orang%0AWaktu: ${waktu} WITA%0APesan: ${pesan}`;
+          const whatsappPromise = fetch(
+            `https://api.whatsapp.com/send?phone=6285792187787&text=${whatsappMsg}`,
+            {
+              method: "GET",
+            }
+          );
+
+          // Handle both promises
+          Promise.all([sheetsPromise, whatsappPromise])
+            .then((responses) => {
+              if (responses[0].ok) {
+                alert(
+                  "Terima kasih! Konfirmasi kehadiran Anda telah terkirim."
+                );
+                document.getElementById("attendanceForm").reset();
+                document.getElementById("rsvpForm").style.display = "none";
+              } else {
+                throw new Error("Google Sheets error");
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert(
+                "Konfirmasi ke WhatsApp berhasil, tetapi gagal ke database. Silakan screenshot konfirmasi ini."
+              );
+            })
+            .finally(() => {
+              loading.style.display = "none";
+              submitBtn.disabled = false;
+            });
+        });
+
+      // Gallery Slider Functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const track = document.getElementById("track");
+        const slides = document.querySelectorAll(".gallery-slide");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+        const closeModal = document.querySelector(".modal-close");
+        const dotsContainer = document.getElementById("dots");
+
+        let index = 1;
+        let autoSlideInterval;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const isMobile = window.innerWidth <= 768;
+
+        // Initialize dots
+        slides.forEach((_, i) => {
+          const dot = document.createElement("div");
+          dot.classList.add("dot");
+          if (i === index) dot.classList.add("active");
+          dot.addEventListener("click", () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        });
+
+        // Update slides position and classes
+        function updateSlides() {
+          if (isMobile) {
+            track.style.transform = `translateX(-${index * 100}%)`;
+          } else {
+            // Center the current slide on desktop
+            const offset = (index - 1) * (100 / 3);
+            track.style.transform = `translateX(-${offset}%)`;
+          }
+
+          slides.forEach((slide, i) => {
+            slide.classList.remove("left", "center", "right");
+
+            if (isMobile) {
+              if (i === index - 1) slide.classList.add("left");
+              else if (i === index) slide.classList.add("center");
+              else if (i === index + 1) slide.classList.add("right");
+            } else {
+              if (i === index - 1) slide.classList.add("left");
+              else if (i === index) slide.classList.add("center");
+              else if (i === index + 1) slide.classList.add("right");
+            }
+          });
+
+          // Update dots
+          document.querySelectorAll(".dot").forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+          });
+        }
+
+        // Go to specific slide
+        function goToSlide(newIndex) {
+          if (newIndex < 0) newIndex = slides.length - 1;
+          else if (newIndex >= slides.length) newIndex = 0;
+
+          index = newIndex;
+          updateSlides();
+          resetAutoSlide();
+        }
+
+        // Next slide
+        function nextSlide() {
+          goToSlide(index + 1);
+        }
+
+        // Previous slide
+        function prevSlide() {
+          goToSlide(index - 1);
+        }
+
+        // Auto slide
+        function startAutoSlide() {
+          autoSlideInterval = setInterval(nextSlide, 3000);
+        }
+
+        function resetAutoSlide() {
+          clearInterval(autoSlideInterval);
+          startAutoSlide();
+        }
+
+        // Event listeners
+        prevBtn.addEventListener("click", prevSlide);
+        nextBtn.addEventListener("click", nextSlide);
+
+        // Touch events for mobile swipe
+        track.addEventListener("touchstart", (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+          clearInterval(autoSlideInterval);
+        });
+
+        track.addEventListener("touchend", (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+          startAutoSlide();
+        });
+
+        function handleSwipe() {
+          const difference = touchStartX - touchEndX;
+          if (difference > 50) nextSlide(); // Swipe left
+          else if (difference < -50) prevSlide(); // Swipe right
+        }
+
+        // Modal functionality
+        slides.forEach((slide) => {
+          const img = slide.querySelector("img");
+          if (img) {
+            img.addEventListener("click", () => {
+              if (img.src) {
+                modal.classList.add("show");
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                document.body.style.overflow = "hidden";
+              }
+            });
+          }
+        });
+
+        closeModal.addEventListener("click", () => {
+          modal.classList.remove("show");
+          document.body.style.overflow = "";
+        });
+
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.remove("show");
+            document.body.style.overflow = "";
+          }
+        });
+
+        // Keyboard navigation
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") nextSlide();
+          else if (e.key === "ArrowLeft") prevSlide();
+          else if (e.key === "Escape") {
+            modal.classList.remove("show");
+            document.body.style.overflow = "";
+          }
+        });
+
+        // Handle window resize
+        window.addEventListener("resize", () => {
+          const newIsMobile = window.innerWidth <= 768;
+          if (newIsMobile !== isMobile) {
+            window.location.reload(); // Simplest way to handle layout change
+          }
+        });
+
+        // Initialize
+        updateSlides();
+        startAutoSlide();
+      });
+    </script>
+  </body>
+</html>
