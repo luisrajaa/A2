@@ -705,50 +705,6 @@
         height: 18px;
       }
 
-      /* Gaya Icon Musik */
-      .music-control {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        width: 50px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        transition: all 0.3s;
-        border: 1px solid #e0c9a6;
-      }
-
-      .music-control:hover {
-        transform: scale(1.1);
-        background: #f8f1e5;
-      }
-
-      .music-icon {
-        width: 24px;
-        height: 24px;
-        stroke: #8b5a2b;
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-
-      .pause-indicator {
-        display: none;
-        stroke: none;
-        fill: #8b5a2b;
-      }
-
-      .music-control.paused .pause-indicator {
-        display: block;
-      }
-
       /* Loading Indicator */
       .loading {
         display: none;
@@ -779,6 +735,35 @@
         100% {
           transform: rotate(360deg);
         }
+      }
+
+      /* Music Player */
+      .music-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .music-player:hover {
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      .music-icon {
+        width: 24px;
+        height: 24px;
+        color: #8b5a2b;
       }
 
       /* Responsive Adjustments */
@@ -851,28 +836,28 @@
       />
     </audio>
 
-    <!-- Loading Indicator -->
-    <div class="loading" id="loading">
-      <div class="spinner"></div>
-    </div>
-
-    <!-- Floating Music Control -->
-    <div class="music-control" id="musicControl">
-      <svg class="music-icon" viewBox="0 0 24 24">
-        <!-- Icon Note (default state) -->
+    <!-- Music Player Button -->
+    <div class="music-player" id="musicPlayer">
+      <svg
+        class="music-icon"
+        id="musicIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
         <path d="M9 18V5l12-2v13"></path>
         <circle cx="6" cy="18" r="3"></circle>
         <circle cx="18" cy="16" r="3"></circle>
-        <!-- Pause indicator (hidden by default) -->
-        <rect
-          x="4"
-          y="4"
-          width="6"
-          height="16"
-          rx="1"
-          class="pause-indicator"
-        ></rect>
       </svg>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
     </div>
 
     <!-- Hero Section with Countdown -->
@@ -1429,73 +1414,32 @@
 
       // Audio Configuration
       const bgMusic = document.getElementById("bgMusic");
-      const musicControl = document.getElementById("musicControl");
+      const musicPlayer = document.getElementById("musicPlayer");
+      const musicIcon = document.getElementById("musicIcon");
 
-      // Set volume to 50%
-      bgMusic.volume = 0.5;
+      // Set volume to 75%
+      bgMusic.volume = 0.75;
 
-      // Auto-play strategy with user interaction
-      function initAudio() {
-        // Try to play automatically (muted to bypass restrictions)
-        bgMusic.muted = true;
-        const playPromise = bgMusic.play();
+      // Music player toggle
+      let isPlaying = false;
 
-        if (playPromise !== undefined) {
-          playPromise
-            .then(() => {
-              // Unmute after first interaction
-              const unmute = () => {
-                bgMusic.muted = false;
-                musicControl.style.display = "flex";
-                document.removeEventListener("click", unmute);
-                document.removeEventListener("touchstart", unmute);
-              };
-              document.addEventListener("click", unmute);
-              document.addEventListener("touchstart", unmute);
-            })
-            .catch((error) => {
-              console.log("Autoplay prevented:", error);
-              musicControl.style.display = "flex";
-            });
-        }
-      }
-
-      // Manual control
-      musicControl.addEventListener("click", () => {
-        if (bgMusic.paused) {
-          bgMusic
-            .play()
-            .then(() => {
-              musicControl.classList.remove("paused");
-            })
-            .catch((e) => {
-              console.error("Playback failed:", e);
-            });
-        } else {
+      musicPlayer.addEventListener("click", function() {
+        if (isPlaying) {
           bgMusic.pause();
-          musicControl.classList.add("paused");
+          musicIcon.innerHTML = '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>';
+        } else {
+          bgMusic.play().catch(e => {
+            console.log("Playback prevented:", e);
+          });
+          musicIcon.innerHTML = '<path d="M11 5L6 9H2v6h4l5 4V5z"></path><circle cx="17" cy="12" r="3"></circle>';
         }
+        isPlaying = !isPlaying;
       });
 
-      // Update icon state
-      bgMusic.addEventListener("play", () => {
-        musicControl.classList.remove("paused");
-      });
-
-      bgMusic.addEventListener("pause", () => {
-        musicControl.classList.add("paused");
-      });
-
-      // Error handling
-      bgMusic.addEventListener("error", (e) => {
-        console.error("Audio error:", e);
-        musicControl.style.display = "flex";
-      });
-
-      // Initialize audio when page loads
-      window.addEventListener("load", () => {
-        initAudio();
-        musicControl.style.display = "flex"; // Always show the music control
+      // Ensure music continues to loop when it ends
+      bgMusic.addEventListener("ended", () => {
+        bgMusic.currentTime = 0;
+        bgMusic.play();
       });
 
       // RSVP Form Toggle
